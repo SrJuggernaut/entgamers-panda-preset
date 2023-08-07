@@ -18,10 +18,19 @@ npm install entgamers-panda-preset
 O si prefieres usar Yarn:
 
 ```
-yarn install entgamers-panda-preset
+yarn add entgamers-panda-preset
 ```
 
-Luego, agrega el preset a la configuración de Panda CSS como se describe en la documentación oficial.
+Luego, agrega el preset a la configuración de Panda
+```
+/// panda.config.ts
+import entgamersPandaPreset from 'entgamers-panda-preset'
+
+export default defineConfig({
+  presets: [entgamersPandaPreset],
+/// ...
+})
+```
 
 ### Contribución
 
@@ -29,4 +38,4 @@ Si deseas contribuir al proyecto, puedes hacerlo a través de la creación de is
 
 ### Contacto
 
-Puedes contactar al autor o al equipo de desarrollo a través del Discord de EntGamers.
+Puedes contactar al autor o al equipo de desarrollo a través del [Discord de EntGamers](http://discord.gg/SYnKcU5).

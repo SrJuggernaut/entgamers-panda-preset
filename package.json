@@ -1,12 +1,17 @@
 {
   "name": "entgamers-panda-preset",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "prepare": "husky install",
     "build": "tsc",
-    "build:watch": "tsc -w"
+    "build:watch": "tsc -w",
+    "prepublishOnly": "yarn run build"
   },
   "repository": {
     "type": "git",
