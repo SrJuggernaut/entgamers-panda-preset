@@ -66,15 +66,15 @@ const tokens: Tokens = defineTokens({
   },
   radii: {
     none: { value: '0' },
-    sm: { value: '4px' },
-    md: { value: '8px' },
-    lg: { value: '16px' },
+    small: { value: '4px' },
+    medium: { value: '8px' },
+    large: { value: '16px' },
     round: { value: '50%' }
   },
   spacing: {
-    sm: { value: '8px' },
-    md: { value: '16px' },
-    lg: { value: '24px' }
+    small: { value: '8px' },
+    medium: { value: '16px' },
+    large: { value: '24px' }
   }
 }
 )
