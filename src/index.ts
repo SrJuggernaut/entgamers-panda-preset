@@ -1,6 +1,8 @@
 import { definePreset } from '@pandacss/dev'
 import globalCss from './globalCss'
 import buttonRecipe from './recipes/buttonRecipe'
+import iconButtonRecipe from './recipes/iconButtonRecipe'
+import inputRecipe from './recipes/inputRecipe'
 import semanticTokens from './semanticTokens'
 import tokens from './tokens'
 
@@ -20,6 +22,7 @@ const entGamersPandaPreset = definePreset({
     recipes: {
       button: buttonRecipe,
       iconButton: iconButtonRecipe,
+      input: inputRecipe
     }
   }
 })
