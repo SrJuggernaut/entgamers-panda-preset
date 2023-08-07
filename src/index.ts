@@ -18,7 +18,8 @@ const entGamersPandaPreset = definePreset({
     tokens,
     semanticTokens,
     recipes: {
-      button: buttonRecipe
+      button: buttonRecipe,
+      iconButton: iconButtonRecipe,
     }
   }
 })
