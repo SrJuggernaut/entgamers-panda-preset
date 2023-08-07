@@ -1,5 +1,6 @@
 import { definePreset } from '@pandacss/dev'
 import globalCss from './globalCss'
+import containerPattern from './patterns/containerPattern'
 import buttonRecipe from './recipes/buttonRecipe'
 import iconButtonRecipe from './recipes/iconButtonRecipe'
 import inputRecipe from './recipes/inputRecipe'
@@ -23,6 +24,11 @@ const entGamersPandaPreset = definePreset({
       button: buttonRecipe,
       iconButton: iconButtonRecipe,
       input: inputRecipe
+    }
+  },
+  patterns: {
+    extend: {
+      container: containerPattern
     }
   }
 })
