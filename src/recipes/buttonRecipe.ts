@@ -10,35 +10,47 @@ const buttonRecipe = defineRecipe({
     fontWeight: 'bold',
     cursor: 'pointer',
     transition: 'all 0.2s ease-in-out',
-    borderRadius: 'sm',
-    gap: '10px',
-    _hover: {
-      boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25)'
-    },
-    _active: {
-      boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset'
-    }
+    borderRadius: 'small',
+    gap: '10px'
   },
   variants: {
     color: {
-      primary: { bg: 'primary', color: 'primaryContrast' },
-      success: { bg: 'success', color: 'successContrast' },
-      info: { bg: 'info', color: 'infoContrast' },
-      warning: { bg: 'warning', color: 'warningContrast' },
-      danger: { bg: 'danger', color: 'dangerContrast' }
+      primary: {},
+      success: {},
+      info: {},
+      warning: {},
+      danger: {}
     },
     size: {
-      sm: { paddingBlock: '6px', paddingInline: '12px' },
-      md: { paddingBlock: '10px', paddingInline: '16px' },
-      lg: { paddingBlock: '14px', paddingInline: '20px' }
+      small: { paddingBlock: '6px', paddingInline: '12px' },
+      medium: { paddingBlock: '10px', paddingInline: '16px' },
+      large: { paddingBlock: '14px', paddingInline: '20px' }
     },
     variant: {
-      solid: {},
-      outline: { bg: 'transparent !important', borderWidth: '1px', borderStyle: 'solid' },
-      text: { bg: 'transparent' }
+      solid: {
+        _hover: { boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25)', opacity: '0.95' },
+        _active: { boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset', opacity: '0.95' }
+      },
+      outline: {
+        backgroundColor: 'transparent',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        _hover: { boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.5)', bg: 'rgba(207, 220, 213, 0.05)' },
+        _active: { boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.5) inset', bg: 'rgba(207, 220, 213, 0.05)' }
+      },
+      text: {
+        backgroundColor: 'transparent',
+        _hover: { bg: 'rgba(207, 220, 213, 0.05)', boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25)' },
+        _active: { bg: 'rgba(207, 220, 213, 0.05)', boxShadow: 'inset 2px 2px 2px 2px rgba(0, 0, 0, 0.25)' }
+      }
     }
   },
   compoundVariants: [
+    { variant: 'solid', color: 'primary', css: { bg: 'primary', color: 'primaryContrast' } },
+    { variant: 'solid', color: 'success', css: { bg: 'success', color: 'successContrast' } },
+    { variant: 'solid', color: 'info', css: { bg: 'info', color: 'infoContrast' } },
+    { variant: 'solid', color: 'warning', css: { bg: 'warning', color: 'warningContrast' } },
+    { variant: 'solid', color: 'danger', css: { bg: 'danger', color: 'dangerContrast' } },
     { variant: 'outline', color: 'primary', css: { color: 'primary', borderStyle: 'solid', borderColor: 'primary' } },
     { variant: 'outline', color: 'success', css: { color: 'success', borderStyle: 'solid', borderColor: 'success' } },
     { variant: 'outline', color: 'info', css: { color: 'info', borderStyle: 'solid', borderColor: 'info' } },
@@ -52,7 +64,7 @@ const buttonRecipe = defineRecipe({
   ],
   defaultVariants: {
     color: 'primary',
-    size: 'md',
+    size: 'medium',
     variant: 'solid'
   }
 })
