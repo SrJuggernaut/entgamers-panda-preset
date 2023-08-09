@@ -5,7 +5,7 @@ const typographyRecipe = defineRecipe({
   description: 'Typography styles',
   base: {},
   variants: {
-    variants: {
+    variant: {
       h1: {
         fontSize: 'h1',
         fontFamily: 'heading',
@@ -202,7 +202,7 @@ const typographyRecipe = defineRecipe({
     }
   },
   defaultVariants: {
-    variants: 'body1',
+    variant: 'body1',
     align: 'left',
     color: 'text',
     decoration: 'none',
