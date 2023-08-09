@@ -4,11 +4,11 @@ import containerPattern from './patterns/containerPattern'
 import buttonRecipe from './recipes/buttonRecipe'
 import iconButtonRecipe from './recipes/iconButtonRecipe'
 import inputRecipe from './recipes/inputRecipe'
+import typographyRecipe from './recipes/typographyRecipe'
 import semanticTokens from './semanticTokens'
 import tokens from './tokens'
 
 const entGamersPandaPreset = definePreset({
-  presets: ['@pandacss/dev/presets'],
   globalCss,
   theme: {
     breakpoints: {
@@ -23,7 +23,8 @@ const entGamersPandaPreset = definePreset({
     recipes: {
       button: buttonRecipe,
       iconButton: iconButtonRecipe,
-      input: inputRecipe
+      input: inputRecipe,
+      typography: typographyRecipe
     }
   },
   patterns: {
