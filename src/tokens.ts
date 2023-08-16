@@ -52,6 +52,9 @@ const tokens: Tokens = defineTokens({
     regular: { value: '400' },
     bold: { value: '700' }
   },
+  gradients: {
+    skeletonGradient: { value: 'linear-gradient(110deg, rgba(49,53,56,1) 8%, rgba(28,30,33,1) 15%, rgba(49,53,56,1) 22%)' }
+  },
   lineHeights: {
     normal: { value: 'normal' },
     body: { value: '1.2' },

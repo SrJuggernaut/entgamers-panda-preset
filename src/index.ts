@@ -1,6 +1,8 @@
 import { definePreset } from '@pandacss/dev'
 import globalCss from './globalCss'
+import { keyframes } from './keyframes'
 import containerPattern from './patterns/containerPattern'
+import skeletonPattern from './patterns/skeletonPattern'
 import buttonRecipe from './recipes/buttonRecipe'
 import iconButtonRecipe from './recipes/iconButtonRecipe'
 import inputRecipe from './recipes/inputRecipe'
@@ -11,6 +13,7 @@ import tokens from './tokens'
 const entGamersPandaPreset = definePreset({
   globalCss,
   theme: {
+    keyframes,
     breakpoints: {
       sm: '576px',
       md: '768px',
@@ -29,9 +32,11 @@ const entGamersPandaPreset = definePreset({
   },
   patterns: {
     extend: {
-      container: containerPattern
+      container: containerPattern,
+      skeleton: skeletonPattern
     }
   }
+
 })
 
 export default entGamersPandaPreset
