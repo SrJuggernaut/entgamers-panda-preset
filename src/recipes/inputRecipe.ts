@@ -6,8 +6,7 @@ const inputRecipe = defineRecipe({
   base: {
     boxSizing: 'border-box',
     padding: '10px 16px',
-    margin: 'small',
-    borderWidth: '1px',
+    borderWidth: '2px',
     borderStyle: 'solid',
     borderColor: 'border',
     borderRadius: 'small',
@@ -15,14 +14,16 @@ const inputRecipe = defineRecipe({
     color: 'gray.900',
     transition: 'all 0.2s ease-in-out',
     _focus: {
-      borderColor: 'primary !important',
+      borderColor: 'primary',
       outlineColor: 'primary',
       outlineStyle: 'solid',
       outlineWidth: '1px'
     },
     _disabled: {
-      opacity: 0.5,
-      cursor: 'not-allowed'
+      cursor: 'not-allowed',
+      backgroundColor: 'gray.800',
+      color: 'gray.700',
+      borderColor: 'border'
     },
     '&::placeholder': {
       color: 'gray.500'
@@ -34,8 +35,15 @@ const inputRecipe = defineRecipe({
     },
     status: {
       success: { borderColor: 'success' },
+      info: { borderColor: 'info' },
       warning: { borderColor: 'warning' },
       danger: { borderColor: 'danger' }
+    },
+    margin: {
+      none: { marginBlock: 'none' },
+      small: { marginBlock: 'small' },
+      medium: { marginBlock: 'medium' },
+      large: { marginBlock: 'large' }
     }
   }
 })

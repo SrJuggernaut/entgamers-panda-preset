@@ -9,9 +9,23 @@ const buttonRecipe = defineRecipe({
     justifyContent: 'center',
     fontWeight: 'bold',
     cursor: 'pointer',
-    transition: 'all 0.2s ease-in-out',
+    transitionProperty: 'all',
+    transitionDuration: 'fast',
+    transitionTimingFunction: 'easeInOut',
     borderRadius: 'small',
-    gap: '10px'
+    gap: '10px',
+    _disabled: {
+      cursor: 'not-allowed',
+      backgroundColor: 'gray.800 !important',
+      color: 'gray.700 !important',
+      boxShadow: 'none !important',
+      border: 'none !important',
+      _hover: {
+        boxShadow: 'none !important',
+        backgroundColor: 'gray.800 !important'
+      },
+      _active: { boxShadow: 'none !important' }
+    }
   },
   variants: {
     color: {
@@ -43,6 +57,9 @@ const buttonRecipe = defineRecipe({
         _hover: { bg: 'rgba(207, 220, 213, 0.05)', boxShadow: '2px 2px 2px 0px rgba(0, 0, 0, 0.25)' },
         _active: { bg: 'rgba(207, 220, 213, 0.05)', boxShadow: 'inset 2px 2px 2px 2px rgba(0, 0, 0, 0.25)' }
       }
+    },
+    fullWidth: {
+      true: { width: '100%' }
     }
   },
   compoundVariants: [
@@ -65,8 +82,11 @@ const buttonRecipe = defineRecipe({
   defaultVariants: {
     color: 'primary',
     size: 'medium',
-    variant: 'solid'
-  }
+    variant: 'solid',
+    fullWidth: false
+  },
+  jsx: ['Button']
+
 })
 
 export default buttonRecipe
