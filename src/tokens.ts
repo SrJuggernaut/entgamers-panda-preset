@@ -78,6 +78,19 @@ const tokens: Tokens = defineTokens({
     small: { value: '8px' },
     medium: { value: '16px' },
     large: { value: '24px' }
+  },
+  shadows: {
+    retroBoxShadow: { value: '2px 2px 0px 0px #57899A, 0px 0px 0px 4px #D6E1F9 inset' },
+    papyrusBoxShadow: { value: '2px 2px 0px 0px #57899A, 0px 0px 0px 4px #F1D5A5 inset' }
+  },
+  zIndex: {
+    dropdown: { value: 1000 },
+    sticky: { value: 1020 },
+    fixed: { value: 1030 },
+    modalBackdrop: { value: 1040 },
+    modal: { value: 1050 },
+    popover: { value: 1060 },
+    tooltip: { value: 1070 }
   }
 }
 )

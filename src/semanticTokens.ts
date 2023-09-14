@@ -3,16 +3,26 @@ import { type SemanticTokens } from '@pandacss/types'
 
 const semanticTokens: SemanticTokens = defineSemanticTokens({
   colors: {
-    primary: { value: '{colors.brand}' },
-    primaryContrast: { value: '{colors.gray.900}' },
-    success: { value: '{colors.green}' },
-    successContrast: { value: '{colors.gray.900}' },
-    info: { value: '{colors.blue}' },
-    infoContrast: { value: '{colors.gray.900}' },
-    warning: { value: '{colors.yellow}' },
-    warningContrast: { value: '{colors.gray.900}' },
-    danger: { value: '{colors.red}' },
-    dangerContrast: { value: '{colors.gray.900}' },
+    primary: {
+      DEFAULT: { value: '{colors.brand}', description: 'EntGamers primary color' },
+      contrast: { value: '{colors.gray.900}' }
+    },
+    success: {
+      DEFAULT: { value: '{colors.green}' },
+      contrast: { value: '{colors.gray.900}' }
+    },
+    info: {
+      DEFAULT: { value: '{colors.blue}' },
+      contrast: { value: '{colors.gray.900}' }
+    },
+    warning: {
+      DEFAULT: { value: '{colors.yellow}' },
+      contrast: { value: '{colors.gray.900}' }
+    },
+    danger: {
+      DEFAULT: { value: '{colors.red}' },
+      contrast: { value: '{colors.gray.900}' }
+    },
     text: { value: '{colors.gray.100}' },
     background: { value: '{colors.gray.900}' },
     surface: { value: '{colors.gray.800}' },

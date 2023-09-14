@@ -41,6 +41,10 @@ export const keyframes = defineKeyframes({
     '10%, 30%, 50%, 70%, 90%': { transform: 'translate3d(0, -10px, 0)' },
     '20%, 40%, 60%, 80%': { transform: 'translate3d(0, 10px, 0)' }
   },
+  bgMotion: {
+    from: { backgroundPositionX: '0px' },
+    to: { backgroundPositionX: '2048px' }
+  },
   skeletonWave: {
     to: { backgroundPositionX: '-200%' }
   },

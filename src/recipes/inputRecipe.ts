@@ -38,12 +38,6 @@ const inputRecipe = defineRecipe({
       info: { borderColor: 'info' },
       warning: { borderColor: 'warning' },
       danger: { borderColor: 'danger' }
-    },
-    margin: {
-      none: { marginBlock: 'none' },
-      small: { marginBlock: 'small' },
-      medium: { marginBlock: 'medium' },
-      large: { marginBlock: 'large' }
     }
   }
 })

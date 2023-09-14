@@ -1,6 +1,11 @@
 import { defineGlobalStyles } from '@pandacss/dev'
 
 const globalCss = defineGlobalStyles({
+  '*': {
+    boxSizing: 'border-box',
+    margin: '0',
+    padding: '0'
+  },
   body: {
     fontFamily: 'body',
     fontSize: 'body',

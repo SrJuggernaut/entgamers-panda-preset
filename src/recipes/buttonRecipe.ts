@@ -63,11 +63,11 @@ const buttonRecipe = defineRecipe({
     }
   },
   compoundVariants: [
-    { variant: 'solid', color: 'primary', css: { bg: 'primary', color: 'primaryContrast' } },
-    { variant: 'solid', color: 'success', css: { bg: 'success', color: 'successContrast' } },
-    { variant: 'solid', color: 'info', css: { bg: 'info', color: 'infoContrast' } },
-    { variant: 'solid', color: 'warning', css: { bg: 'warning', color: 'warningContrast' } },
-    { variant: 'solid', color: 'danger', css: { bg: 'danger', color: 'dangerContrast' } },
+    { variant: 'solid', color: 'primary', css: { bg: 'primary', color: 'primary.contrast' } },
+    { variant: 'solid', color: 'success', css: { bg: 'success', color: 'success.contrast' } },
+    { variant: 'solid', color: 'info', css: { bg: 'info', color: 'info.contrast' } },
+    { variant: 'solid', color: 'warning', css: { bg: 'warning', color: 'warning.contrast' } },
+    { variant: 'solid', color: 'danger', css: { bg: 'danger', color: 'danger.contrast' } },
     { variant: 'outline', color: 'primary', css: { color: 'primary', borderStyle: 'solid', borderColor: 'primary' } },
     { variant: 'outline', color: 'success', css: { color: 'success', borderStyle: 'solid', borderColor: 'success' } },
     { variant: 'outline', color: 'info', css: { color: 'info', borderStyle: 'solid', borderColor: 'info' } },
@@ -84,9 +84,7 @@ const buttonRecipe = defineRecipe({
     size: 'medium',
     variant: 'solid',
     fullWidth: false
-  },
-  jsx: ['Button']
-
+  }
 })
 
 export default buttonRecipe

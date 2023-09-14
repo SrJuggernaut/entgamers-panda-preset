@@ -1,6 +1,6 @@
 {
   "name": "entgamers-panda-preset",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "files": [
     "dist/**/*",
@@ -8,7 +8,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "husky install",
+    "postinstall": "husky install",
     "build": "tsc",
     "develop": "tsc -w",
     "prepublishOnly": "yarn run build"
@@ -37,6 +37,6 @@
   "dependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
-    "@pandacss/dev": "^0.11.0"
+    "@pandacss/dev": "^0.14.0"
   }
 }
