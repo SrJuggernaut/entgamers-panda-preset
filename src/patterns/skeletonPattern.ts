@@ -9,7 +9,7 @@ const skeletonPattern = definePattern({
     shape: { type: 'enum', value: ['text', 'circle', 'rectangle'] }
   },
   transform: (props) => {
-    const { animation, color, radius, shape, height, width } = props
+    const { animation, color, radius, shape, height, width, ...rest } = props
     const animationName = animation === undefined ? 'skeletonPulse' : animation === 'wave' ? 'skeletonWave' : 'skeletonPulse'
     return {
       display: 'inline-block',
@@ -26,7 +26,8 @@ const skeletonPattern = definePattern({
       animationName,
       animationDuration: '3s',
       animationIterationCount: 'infinite',
-      animationTimingFunction: 'linear'
+      animationTimingFunction: 'linear',
+      ...rest
     }
   }
 })
