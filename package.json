@@ -11,7 +11,7 @@
     "postinstall": "husky install",
     "build": "tsc",
     "develop": "tsc -w",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "bun run build"
   },
   "repository": {
     "type": "git",
