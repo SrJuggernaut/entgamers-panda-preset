@@ -1,6 +1,6 @@
 {
   "name": "entgamers-panda-preset",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "files": [
     "dist/**/*",
@@ -8,7 +8,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "build": "tsc",
     "develop": "tsc -w",
     "prepublishOnly": "bun run build"
