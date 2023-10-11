@@ -3,6 +3,7 @@ import globalCss from './globalCss'
 import { keyframes } from './keyframes'
 import containerPattern from './patterns/containerPattern'
 import skeletonPattern from './patterns/skeletonPattern'
+import alertRecipe from './recipes/alert'
 import buttonGroupRecipe from './recipes/buttonGroup'
 import buttonRecipe from './recipes/buttonRecipe'
 import cardRecipe from './recipes/cardRecipe'
@@ -27,6 +28,7 @@ const entGamersPandaPreset = definePreset({
     tokens,
     semanticTokens,
     recipes: {
+      alert: alertRecipe,
       button: buttonRecipe,
       buttonGroup: buttonGroupRecipe,
       card: cardRecipe,

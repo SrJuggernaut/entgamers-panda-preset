@@ -162,6 +162,9 @@ const typographyRecipe = defineRecipe({
       },
       muted: {
         color: 'muted'
+      },
+      inherit: {
+        color: 'inherit'
       }
     },
     decoration: {
@@ -204,7 +207,7 @@ const typographyRecipe = defineRecipe({
   defaultVariants: {
     variant: 'body1',
     align: 'left',
-    color: 'text',
+    color: 'inherit',
     decoration: 'none',
     transform: 'normalCase',
     weight: 'regular'
