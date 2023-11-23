@@ -1,6 +1,6 @@
 {
   "name": "entgamers-panda-preset",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "files": [
     "dist/**/*",
@@ -24,19 +24,19 @@
   },
   "homepage": "https://github.com/SrJuggernaut/entgamers-panda-preset#readme",
   "devDependencies": {
-    "@pandacss/types": "^0.11.0",
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "eslint": "^8.0.1",
-    "eslint-config-standard-with-typescript": "^37.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
-    "eslint-plugin-promise": "^6.0.0",
+    "@pandacss/types": "^0.18.3",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "typescript": "*"
   },
   "dependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
-    "@pandacss/dev": "^0.14.0"
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@pandacss/dev": "^0.18.3"
   }
 }
