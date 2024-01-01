@@ -8,8 +8,11 @@ import buttonGroupRecipe from './recipes/buttonGroup'
 import buttonRecipe from './recipes/buttonRecipe'
 import cardRecipe from './recipes/cardRecipe'
 import chipRecipe from './recipes/chipRecipe'
+import collapseRecipe from './recipes/collapse'
 import iconButtonRecipe from './recipes/iconButtonRecipe'
 import inputRecipe from './recipes/inputRecipe'
+import listGroupRecipe from './recipes/listGroup'
+import tooltipRecipe from './recipes/tooltip'
 import typographyRecipe from './recipes/typographyRecipe'
 import semanticTokens from './semanticTokens'
 import tokens from './tokens'
@@ -33,8 +36,11 @@ const entGamersPandaPreset = definePreset({
       buttonGroup: buttonGroupRecipe,
       card: cardRecipe,
       chip: chipRecipe,
+      collapse: collapseRecipe,
       iconButton: iconButtonRecipe,
       input: inputRecipe,
+      listGroup: listGroupRecipe,
+      tooltip: tooltipRecipe,
       typography: typographyRecipe
     }
   },
