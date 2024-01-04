@@ -31,7 +31,7 @@ const inputRecipe = defineRecipe({
   },
   variants: {
     fullWidth: {
-      true: { width: 'calc(100% - (token(spacing.small) * 2))' }
+      true: { width: '100%' }
     },
     status: {
       success: { borderColor: 'success' },
