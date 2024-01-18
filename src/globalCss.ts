@@ -4,7 +4,8 @@ const globalCss = defineGlobalStyles({
   '*': {
     boxSizing: 'border-box',
     margin: '0',
-    padding: '0'
+    padding: '0',
+    minWidth: '0'
   },
   body: {
     fontFamily: 'body',
@@ -12,7 +13,8 @@ const globalCss = defineGlobalStyles({
     lineHeight: 'body',
     fontWeight: 'regular',
     color: 'gray.100',
-    backgroundColor: 'background'
+    backgroundColor: 'background',
+    minHeight: '100dvh'
   },
   'h1, h2, h3, h4, h5, h6': {
     fontFamily: 'heading',
@@ -20,7 +22,8 @@ const globalCss = defineGlobalStyles({
     lineHeight: 'heading',
     color: 'primary',
     WebkitTextStrokeColor: 'black',
-    WebkitTextStrokeWidth: '1px'
+    WebkitTextStrokeWidth: '1px',
+    textWrap: 'balance'
   },
   h1: {
     fontSize: 'h1'
@@ -46,7 +49,9 @@ const globalCss = defineGlobalStyles({
   },
   p: {
     fontSize: 'body',
-    marginBottom: '1rem'
+    marginBottom: '1rem',
+    lineHeight: 'body',
+    textWrap: 'pretty'
   },
   ul: {
     listStyle: 'initial',
