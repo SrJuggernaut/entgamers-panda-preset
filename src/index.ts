@@ -38,6 +38,7 @@ const entGamersPandaPreset = definePreset({
       card: cardRecipe,
       chip: chipRecipe,
       collapse: collapseRecipe,
+      dropZone: dropZoneRecipe,
       iconButton: iconButtonRecipe,
       input: inputRecipe,
       listGroup: listGroupRecipe,
