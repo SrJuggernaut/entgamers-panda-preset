@@ -4,7 +4,7 @@ import { type SemanticTokens } from '@pandacss/types'
 const semanticTokens: SemanticTokens = defineSemanticTokens({
   colors: {
     primary: {
-      DEFAULT: { value: '{colors.brand}', description: 'EntGamers primary color' },
+      DEFAULT: { value: '{colors.brand}' },
       contrast: { value: '{colors.gray.900}' }
     },
     success: {
