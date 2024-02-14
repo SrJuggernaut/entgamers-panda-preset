@@ -7,8 +7,8 @@ const tableRecipe = defineSlotRecipe({
     container: {
       display: 'block',
       overflowX: 'scroll',
-      borderRadius: 'medium',
-      overflow: 'hidden'
+      overflowY: 'hidden',
+      borderRadius: 'medium'
     },
     table: {
       minWidth: '100%',
